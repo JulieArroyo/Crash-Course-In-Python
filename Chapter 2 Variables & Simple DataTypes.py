@@ -38,6 +38,7 @@ print(message)
 # you can use single or double quotes
 # which means you can use apostrophes inside of strings.
 
+
 # Change the case of words of the string with methods
 name = "ada lovelace"
 print(name.title())
@@ -126,5 +127,60 @@ print(favorite_language.strip())
 
 favorite_language = favorite_language.strip()
 print(favorite_language)
+
+
+# ############ NUMBERS ############ #
+# Python treats numbers in several different ways
+
+# #### INTEGERS #### #
+# Add (+), subtract(-), multiply(*), divide(/)
+
+print(2 + 3)
+# 5
+print(3 - 2)
+# 1
+print(2 * 3)
+# 6
+print(3 / 2)
+# 1
+
+
+# ###### EXPONENTS ** ########## #
+
+print(3 ** 2)
+# 9
+print(3 ** 3)
+# 27
+print(10 ** 6)
+# 1000000
+
+# Python supports the order of operations
+
+print(2 + 3 * 4)
+# 14
+print((2 + 3) * 4)
+# 20
+
+
+
+# ############## FLOATS ############ #
+# Python calls any number with a decimal point a FLOAT
+
+print(0.1 + 0.1)
+# 0.2
+print(0.2 + 0.2)
+# 0.4
+print(2 * 0.1)
+# 0.2
+print(2 * 0.2)
+# 0.4
+
+# To Use an integer as a string of characters
+# by wrapping the variable in a str() function
+
+age = 23
+message = "Happy " + str(age) + "rd Birthday!"
+print(message)
+# Happy 23rd Birthday! 
 
 

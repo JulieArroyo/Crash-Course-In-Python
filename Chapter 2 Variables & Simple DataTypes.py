@@ -69,3 +69,62 @@ print("Hello, " + full_name.title() + "!")
 message = "Hello, " + full_name.upper() + "!"
 print(message)
 
+
+# ############ ADDING WHITESPACE TO STRINGS WITH TABS OR NEW LINES ############### #
+# Whitespace - any non-printing character like spaces, tabs or end-of-line-symbols
+
+# To add a TAB (4 spaces) to your text, use the character combo \t
+
+print("Python")
+# Python
+
+print("\tPython")
+#     Python
+
+# To add a NEW LINE in a string, use the character combo \n
+
+print("Languages: \nPython\nC\nJavaScript")
+# Languages:
+# Python
+# C
+# JavaScript
+
+# Combine New Lines and Tabs
+# The string "\n\t" tells Python to move to a new line and start the new line with a tab
+
+# create a one line string to make 4 lines of output
+print("Languages:\n\tPython\n\tC\n\tJavaScript")
+# Languages:
+#     Python
+#     C
+#     JavaScript
+
+
+# ############ STRIPPING WHITESPACE ############## #
+# Extra whitespace can become confusing or cause unwanted user input errors
+
+# To ensure that there is no whitespace on the right of a string
+# use the rstrip() method
+
+favorite_language = ' python '
+print(favorite_language)
+
+print(favorite_language.rstrip())
+
+# this removes the extra whitespace temporarily
+# To remove it permanently store the stripped value back into the variable
+
+favorite_language = favorite_language.rstrip()
+print(favorite_language)
+
+
+# Remove the White space from the LEFT side use the lstrip() method
+# Or strip from BOTH sides using strip()
+
+print(favorite_language.lstrip())
+print(favorite_language.strip())
+
+favorite_language = favorite_language.strip()
+print(favorite_language)
+
+
